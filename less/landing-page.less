@@ -1,48 +1,4 @@
-html {
-    background-color: lightblue;
-}
-nav {
-    background: linear-gradient(rgba(0, 125, 209, 0.5), white);
-
-    color: white;
-}
-@import url("https://fonts.googleapis.com/css?family=Oleo+Script:700&display=swap");
-.btn(@width, @size) {
-    background: linear-gradient(lightblue, rgba(0, 0, 255, 0.253), blue);
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 4px;
-    font-weight: 600;
-    color: white;
-    width: @width;
-    font-size: @size;
-}
-.spaceIt {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-shadow: 0 0 10px black, 0 0 15px black;
-
-    .logo {
-        font-weight: 900;
-        font-family: "Oleo Script";
-        font-size: 2.3rem;
-    }
-    .links {
-        width: 20%;
-        display: flex;
-        justify-content: space-around;
-        a {
-            .btn(45%, 1.4rem);
-            padding: 2% 0;
-
-            text-decoration: none;
-        }
-    }
-}
-
+//This is the fixed image background
 .wrapper {
     background-image: url(../img/avi-waxman-ZdtOy25eNn4-unsplash.jpg);
     max-width: 100%;
@@ -55,6 +11,7 @@ nav {
     position: fixed;
     z-index: -1;
 }
+//general styling for the see thru black color on each section. White border added too.
 section {
     width: 90%;
     margin: 3% auto 0;
@@ -63,6 +20,7 @@ section {
     background: rgba(0, 0, 0, 0.65);
     color: white;
 }
+//First rectangle
 .mainText {
     div {
         padding: 2% 0;
@@ -101,17 +59,12 @@ section {
             display: grid;
             grid-template-columns: 4fr 1fr 0.5fr;
         }
-        button {
-            padding: 0.5% 2%;
-            margin: 2% 0 0;
-            .btn(20%, 1.6rem);
-            text-shadow: 0 0 10px black, 0 0 15px black;
-        }
     }
 }
+
+//The about our site section
 .details {
     text-align: center;
-
     h3 {
         font-size: 2.8rem;
         width: 100%;
@@ -132,12 +85,17 @@ section {
         }
     }
 }
+
+//the how it works section
 .how {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 2%;
     padding: 1% 5% 0;
     h4 {
         font-size: 2.8rem;
         text-align: center;
+        margin: 3% 0 0;
     }
     h5 {
         font-size: 2.2rem;
@@ -146,5 +104,13 @@ section {
         font-size: 1.6rem;
         line-height: 150%;
         margin: 2%;
+    }
+    .points {
+        margin: 0;
+        font-size: 1.4rem;
+        padding-bottom: 1%;
+    }
+    button {
+        align-self: flex-end;
     }
 }
