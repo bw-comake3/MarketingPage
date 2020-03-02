@@ -3,6 +3,7 @@ nav {
 
     color: white;
 }
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script:700&display=swap");
 .btn(@width, @size) {
     background: linear-gradient(lightblue, rgba(0, 0, 255, 0.253), blue);
     text-align: center;
@@ -24,6 +25,8 @@ nav {
     .logo {
         border: 1px solid black;
         font-weight: 900;
+        font-family: "Oleo Script";
+        font-size: 2.3rem;
     }
     .links {
         border: 1px solid red;
@@ -64,36 +67,45 @@ section {
         padding: 2% 0;
         text-align: center;
 
-        h1 {
-            font-size: 3.5rem;
-        }
         h2 {
-            border: 1px solid white;
             text-align: center;
             margin: 0;
             padding: 0 10%;
             font-size: 4rem;
         }
         p {
-            font-size: 1.6rem;
+            border: 1px dotted magenta;
+            padding: 0 2%;
+            font-size: 1.8rem;
+            line-height: 170%;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .intro {
+            margin: 0;
+            padding: 1% 0;
+            p {
+                font-size: 1.6rem;
+                color: red;
+                font-weight: 900;
+                transform: translateX(-30%);
+            }
+            h1 {
+                font-size: 4rem;
+                margin-top: -1%;
+                font-family: "Oleo Script";
+            }
+        }
+        .nextTo {
+            display: grid;
+            grid-template-columns: 4fr 1fr 0.5fr;
         }
         button {
             padding: 0.5% 2%;
             margin: 2% 0 0;
             .btn(25%, 1.6rem);
             text-shadow: 0 0 10px black, 0 0 15px black;
-        }
-        .intro {
-            margin: 0;
-            padding: 0 0 1%;
-            p {
-                font-size: 1.4rem;
-                color: blue;
-                font-weight: 600;
-            }
-            h1 {
-                margin-top: -1%;
-            }
         }
     }
 }
@@ -118,5 +130,21 @@ section {
                 padding-bottom: 2%;
             }
         }
+    }
+}
+.how {
+    margin-bottom: 2%;
+    padding: 1% 5% 0;
+    h4 {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+    h5 {
+        font-size: 2.2rem;
+    }
+    p {
+        font-size: 1.6rem;
+        line-height: 150%;
+        margin: 2%;
     }
 }
