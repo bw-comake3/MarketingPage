@@ -330,16 +330,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-shadow: 0 0 10px black;
+  text-shadow: 0 0 10px black, 0 0 15px black;
 }
 .spaceIt .logo {
-  border: 1px solid black;
   font-weight: 900;
   font-family: "Oleo Script";
   font-size: 2.3rem;
 }
 .spaceIt .links {
-  border: 1px solid red;
   width: 20%;
   display: flex;
   justify-content: space-around;
@@ -387,7 +385,6 @@ section {
   font-size: 4rem;
 }
 .mainText div p {
-  border: 1px dotted magenta;
   padding: 0 2%;
   font-size: 1.8rem;
   line-height: 170%;
@@ -422,7 +419,7 @@ section {
   border-radius: 4px;
   font-weight: 600;
   color: white;
-  width: 25%;
+  width: 20%;
   font-size: 1.6rem;
   text-shadow: 0 0 10px black, 0 0 15px black;
 }
