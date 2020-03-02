@@ -334,6 +334,10 @@ body {
   font-size: 1.6rem;
   text-shadow: 0 0 10px black, 0 0 15px black;
 }
+.join:hover {
+  background: linear-gradient(#7ab2c5, rgba(0, 0, 255, 0.431), #000050);
+  cursor: pointer;
+}
 nav {
   background: linear-gradient(rgba(0, 125, 209, 0.5), white);
   color: white;
@@ -368,6 +372,10 @@ nav {
   padding: 2% 0;
   text-decoration: none;
 }
+.spaceIt .links a:hover {
+  background: linear-gradient(#7ab2c5, rgba(0, 0, 255, 0.431), #000050);
+  cursor: pointer;
+}
 .wrapper {
   background-image: url(../img/avi-waxman-ZdtOy25eNn4-unsplash.jpg);
   max-width: 100%;
@@ -396,7 +404,7 @@ section {
   text-align: center;
   margin: 0;
   padding: 0 10%;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 .mainText div p {
   padding: 0 2%;
