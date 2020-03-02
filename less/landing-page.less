@@ -31,6 +31,9 @@ section {
             margin: 0;
             padding: 0 10%;
             font-size: 3.5rem;
+            @media @tablet {
+                font-size: 3rem;
+            }
         }
         p {
             padding: 0 2%;
@@ -40,24 +43,31 @@ section {
             margin: 0 auto;
         }
 
-        .intro {
-            margin: 0;
-            padding: 1% 0;
-            p {
-                font-size: 1.6rem;
-                color: red;
-                font-weight: 900;
-                transform: translateX(-30%);
-            }
-            h1 {
-                font-size: 4rem;
-                margin-top: -1%;
-                font-family: "Oleo Script";
-            }
-        }
         .nextTo {
+            @media @tablet {
+                display: flex;
+                flex-direction: column-reverse;
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+
             display: grid;
             grid-template-columns: 4fr 1fr 0.5fr;
+            .intro {
+                margin: 0;
+                padding: 1% 0;
+                p {
+                    font-size: 1.6rem;
+                    color: red;
+                    font-weight: 900;
+                }
+                h1 {
+                    font-size: 4rem;
+                    margin-top: -1%;
+                    font-family: "Oleo Script";
+                }
+            }
         }
     }
 }

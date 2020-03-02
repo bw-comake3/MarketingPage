@@ -376,6 +376,11 @@ nav {
   background: linear-gradient(#7ab2c5, rgba(0, 0, 255, 0.431), #000050);
   cursor: pointer;
 }
+@media (max-width:800px) {
+  .spaceIt .links {
+    width: 50%;
+  }
+}
 .wrapper {
   background-image: url(../img/avi-waxman-ZdtOy25eNn4-unsplash.jpg);
   max-width: 100%;
@@ -413,24 +418,33 @@ section {
   width: 90%;
   margin: 0 auto;
 }
-.mainText div .intro {
+.mainText div .nextTo {
+  display: grid;
+  grid-template-columns: 4fr 1fr 0.5fr;
+}
+.mainText div .nextTo .intro {
   margin: 0;
   padding: 1% 0;
 }
-.mainText div .intro p {
+.mainText div .nextTo .intro p {
   font-size: 1.6rem;
   color: red;
   font-weight: 900;
   transform: translateX(-30%);
 }
-.mainText div .intro h1 {
+.mainText div .nextTo .intro h1 {
   font-size: 4rem;
   margin-top: -1%;
   font-family: "Oleo Script";
 }
-.mainText div .nextTo {
-  display: grid;
-  grid-template-columns: 4fr 1fr 0.5fr;
+@media (max-width:800px) {
+  .mainText div .nextTo {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .mainText div .nextTo p {
+    transform: translateX(-5%);
+  }
 }
 .details {
   text-align: center;
