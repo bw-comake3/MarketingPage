@@ -313,6 +313,9 @@ html,
 body {
   font-family: "Roboto", sans-serif;
 }
+html {
+  background-color: lightblue;
+}
 nav {
   background: linear-gradient(rgba(0, 125, 209, 0.5), white);
   color: white;
