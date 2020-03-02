@@ -15,6 +15,11 @@
         width: 125%;
         background-size: 125%;
     }
+    @media screen {
+        max-width: 200%;
+        width: 180%;
+        background-position-y: 0;
+    }
 }
 //general styling for the see thru black color on each section. White border added too.
 section {
@@ -38,6 +43,10 @@ section {
             font-size: 3.5rem;
             @media @tablet {
                 font-size: 3rem;
+            }
+            @media @phone {
+                font-size: 2.2rem;
+                padding: 0 1%;
             }
         }
         p {
@@ -96,6 +105,13 @@ section {
                 font-size: 1.6rem;
                 line-height: 150%;
                 padding-bottom: 2%;
+            }
+        }
+        @media @phone {
+            flex-direction: column;
+            div {
+                width: 90%;
+                margin: 0 auto;
             }
         }
     }

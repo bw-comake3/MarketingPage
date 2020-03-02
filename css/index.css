@@ -338,6 +338,11 @@ body {
   background: linear-gradient(#7ab2c5, rgba(0, 0, 255, 0.431), #000050);
   cursor: pointer;
 }
+@media (max-width:500px) {
+  .join {
+    width: 50%;
+  }
+}
 nav {
   background: linear-gradient(rgba(0, 125, 209, 0.5), white);
   color: white;
@@ -393,6 +398,20 @@ nav {
   position: fixed;
   z-index: -1;
 }
+@media (max-width:800px) {
+  .wrapper {
+    max-width: 125%;
+    width: 125%;
+    background-size: 125%;
+  }
+}
+@media screen {
+  .wrapper {
+    max-width: 200%;
+    width: 180%;
+    background-position-y: 0;
+  }
+}
 section {
   width: 90%;
   margin: 3% auto 0;
@@ -411,6 +430,17 @@ section {
   padding: 0 10%;
   font-size: 3.5rem;
 }
+@media (max-width:800px) {
+  .mainText div h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width:500px) {
+  .mainText div h2 {
+    font-size: 2.2rem;
+    padding: 0 1%;
+  }
+}
 .mainText div p {
   padding: 0 2%;
   font-size: 1.8rem;
@@ -422,6 +452,15 @@ section {
   display: grid;
   grid-template-columns: 4fr 1fr 0.5fr;
 }
+@media (max-width:800px) {
+  .mainText div .nextTo {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .mainText div .nextTo p {
+    font-size: 1.5rem;
+  }
+}
 .mainText div .nextTo .intro {
   margin: 0;
   padding: 1% 0;
@@ -430,21 +469,11 @@ section {
   font-size: 1.6rem;
   color: red;
   font-weight: 900;
-  transform: translateX(-30%);
 }
 .mainText div .nextTo .intro h1 {
   font-size: 4rem;
   margin-top: -1%;
   font-family: "Oleo Script";
-}
-@media (max-width:800px) {
-  .mainText div .nextTo {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .mainText div .nextTo p {
-    transform: translateX(-5%);
-  }
 }
 .details {
   text-align: center;
@@ -467,6 +496,15 @@ section {
   font-size: 1.6rem;
   line-height: 150%;
   padding-bottom: 2%;
+}
+@media (max-width:500px) {
+  .details .columns {
+    flex-direction: column;
+  }
+  .details .columns div {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 .how {
   display: flex;
