@@ -1,7 +1,6 @@
 //This is the fixed image background
 .wrapper {
     background-image: url(../img/avi-waxman-ZdtOy25eNn4-unsplash.jpg);
-    max-width: 100%;
     filter: blur(3px);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -15,9 +14,10 @@
         width: 125%;
         background-size: 125%;
     }
-    @media screen {
-        max-width: 200%;
-        width: 180%;
+    @media @phone {
+        max-width: 280%;
+        width: 280%;
+        height: 150vh;
         background-position-y: 0;
     }
 }
