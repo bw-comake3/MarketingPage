@@ -60,7 +60,7 @@
         @media @phone {
             display: flex;
             flex-direction: column;
-            padding-bottom: 3%;
+            padding-bottom: 5%;
         }
     }
 }
@@ -115,6 +115,14 @@
         p {
             padding: 0 2% 2% 6%;
         }
+    }
+    @media @phone {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "contactHeader"
+            "address"
+            "form";
+        gap: 25px;
     }
 }
 

@@ -637,7 +637,7 @@ section {
   .commonIssues .blocks {
     display: flex;
     flex-direction: column;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
   }
 }
 .contact {
@@ -688,6 +688,13 @@ section {
 }
 .contact form p {
   padding: 0 2% 2% 6%;
+}
+@media (max-width:500px) {
+  .contact {
+    grid-template-columns: 1fr;
+    grid-template-areas: "contactHeader" "address" "form";
+    gap: 25px;
+  }
 }
 .goBack {
   font-size: 1.4rem;
