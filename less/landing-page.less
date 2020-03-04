@@ -57,7 +57,7 @@ section {
             width: 90%;
             margin: 0 auto;
         }
-
+        .phoneButton();
         .nextTo {
             @media @tablet {
                 display: flex;
@@ -154,6 +154,11 @@ section {
         .join {
             width: 45%;
             padding: 1% 0;
+        }
+        @media @phone {
+            width: 100%;
+            flex-direction: column;
+            .phoneButton();
         }
     }
 }

@@ -315,9 +315,14 @@ template {
 }
 html {
   font-size: 62.5%;
-  background: linear-gradient(skyblue, white);
+  background: linear-gradient(skyblue, rgba(255, 166, 0, 0.767), rgba(0, 0, 139));
   z-index: -2;
-  height: 100vh;
+  height: 200vh;
+}
+@media (max-width:500px) {
+  html {
+    height: 300vh;
+  }
 }
 html,
 body {
@@ -456,6 +461,11 @@ section {
   width: 90%;
   margin: 0 auto;
 }
+.mainText div .join {
+  margin: 3% auto;
+  width: 80%;
+  padding: 2% 0;
+}
 .mainText div .nextTo {
   display: grid;
   grid-template-columns: 4fr 1fr 0.5fr;
@@ -551,6 +561,17 @@ section {
 .how .buttonsRight .join {
   width: 45%;
   padding: 1% 0;
+}
+@media (max-width:500px) {
+  .how .buttonsRight {
+    width: 100%;
+    flex-direction: column;
+  }
+  .how .buttonsRight .join {
+    margin: 3% auto;
+    width: 80%;
+    padding: 2% 0;
+  }
 }
 .wrapper2 {
   margin-top: -8%;
