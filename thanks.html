@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Thank You!</title>
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="spaceIt">
+                    <div>
+                        <h1 class="logo" onclick="window.location.href='#'">
+                            Co-Make
+                        </h1>
+                    </div>
+                    <div class="links">
+                        <a href="#">Login</a>
+                        <a href="#">Sign Up</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <a href="ReportingGuidelines.html" class="goBack">Back to Examples</a>
+        <div id="results">
+            <p>
+                Thank you for your response! We will read and take action, if
+                possible. We will get back to you as soon as possible as well.
+            </p>
+            <p>Here is what was submitted:</p>
+        </div>
+        <script>
+            const resultsList = document.getElementById("results");
+            new URLSearchParams(window.location.search).forEach(
+                (value, name) => {
+                    resultsList.append(`${name}: ${value}`);
+                    resultsList.append(document.createElement("br"));
+                }
+            );
+        </script>
+        <!-- <p class="thankYou">
+            Thank you for your response! We will read and take action, if
+            possible. We will get back to you as soon as possible as well.
+        </p> -->
+    </body>
+</html>

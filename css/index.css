@@ -315,8 +315,9 @@ template {
 }
 html {
   font-size: 62.5%;
-  background-color: lightblue;
+  background: linear-gradient(skyblue, white);
   z-index: -2;
+  height: 100vh;
 }
 html,
 body {
@@ -359,7 +360,7 @@ nav {
 .spaceIt .logo {
   font-weight: 900;
   font-family: "Oleo Script";
-  font-size: 2.3rem;
+  font-size: 3rem;
 }
 .spaceIt .logo:hover {
   cursor: pointer;
@@ -398,7 +399,8 @@ nav {
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
-  background-position-y: 100%;
+  background-position-y: top;
+  background-position-x: right;
   height: 100vh;
   position: fixed;
   z-index: -1;
@@ -548,11 +550,12 @@ section {
   padding: 1% 0;
 }
 .wrapper2 {
+  margin-top: -8%;
   background: url(../img/kent-rebman-Hau9TnHS130-unsplash.jpg);
-  height: 100vh;
+  height: 120vh;
+  width: 120%;
   background-size: 100%;
-  width: 100%;
-  background-position-y: 110%;
+  background-position-y: bottom;
   background-repeat: no-repeat;
   position: fixed;
   filter: blur(3px);
@@ -563,14 +566,17 @@ section {
     max-width: 125%;
     width: 125%;
     background-size: 125%;
+    background-position-x: right;
   }
 }
 @media (max-width:500px) {
   .wrapper2 {
-    max-width: 260%;
-    width: 260%;
-    height: 150vh;
-    background-position-y: 0;
+    max-width: 220%;
+    width: 220%;
+    height: 200vh;
+    margin-top: -20%;
+    background-position-y: top;
+    background-position-x: 220%;
   }
 }
 .reporting h1 {
@@ -580,6 +586,7 @@ section {
 .reporting p {
   line-height: 150%;
   padding: 0 5% 2%;
+  font-size: 1.4rem;
 }
 .commonIssues h2 {
   font-size: 3rem;
@@ -602,8 +609,12 @@ section {
   font-size: 1.4rem;
   line-height: 150%;
 }
-.submit {
-  padding: 2% 5%;
+@media (max-width:500px) {
+  .commonIssues .blocks {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3%;
+  }
 }
 .contact {
   display: grid;
@@ -619,8 +630,10 @@ section {
   grid-area: address;
   font-size: 1.4rem;
   padding-left: 2%;
-  border: 1px solid green;
   width: 90%;
+}
+.contact .right {
+  text-align: right;
 }
 .contact .form {
   grid-area: form;
@@ -629,7 +642,6 @@ section {
   font-size: 2rem;
 }
 .contact form {
-  border: 1px solid orangered;
   text-align: right;
   font-size: 1.4rem;
 }
@@ -649,4 +661,15 @@ section {
 .contact form .actions .join {
   width: 70%;
   padding: 2% 0;
+}
+.contact form p {
+  padding: 0 2% 2% 6%;
+}
+.goBack {
+  font-size: 1.4rem;
+  margin: 1%;
+}
+#results {
+  font-size: 1.6rem;
+  padding: 3%;
 }
