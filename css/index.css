@@ -505,6 +505,9 @@ section {
   line-height: 150%;
   padding-bottom: 2%;
 }
+.details .columns div i {
+  font-size: 5rem;
+}
 @media (max-width:712px) {
   .details .columns {
     flex-direction: column;
