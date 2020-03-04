@@ -360,6 +360,11 @@ nav {
   font-family: "Oleo Script";
   font-size: 2.3rem;
 }
+.spaceIt .logo:hover {
+  cursor: pointer;
+  color: #fff3f3;
+  text-shadow: 0 0 10px black, 0 0 20px black;
+}
 .spaceIt .links {
   width: 20%;
   display: flex;
@@ -406,8 +411,8 @@ nav {
 }
 @media (max-width:500px) {
   .wrapper {
-    max-width: 280%;
-    width: 280%;
+    max-width: 260%;
+    width: 260%;
     height: 150vh;
     background-position-y: 0;
   }
@@ -497,7 +502,7 @@ section {
   line-height: 150%;
   padding-bottom: 2%;
 }
-@media (max-width:500px) {
+@media (max-width:712px) {
   .details .columns {
     flex-direction: column;
   }
