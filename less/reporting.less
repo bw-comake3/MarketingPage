@@ -59,21 +59,24 @@
 }
 .contact {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-        "contactHeader contactHeader"
+        "contactHeader ."
         "address form";
     .contactHeader {
         grid-area: contactHeader;
     }
     .address {
         grid-area: address;
-        margin-left: 10%;
         font-size: 1.4rem;
+        padding-left: 2%;
+        border: 1px solid green;
+        width: 90%;
     }
     .form {
         grid-area: form;
     }
-    padding: 1% 5% 2%;
+    padding: 1% 3% 2%;
     h4 {
         font-size: 2rem;
     }
@@ -81,19 +84,24 @@
     form {
         border: 1px solid orangered;
         text-align: right;
+        font-size: 1.4rem;
         input {
             width: 80%;
+            margin-bottom: 2%;
+            border-radius: 5px;
         }
 
         textarea {
             width: 80%;
+            border-radius: 4px;
         }
         .actions {
-            li {
-                list-style-type: none;
+            .join {
+                width: 70%;
+                padding: 2% 0;
             }
-            width: 40%;
-            height: 10vh;
+            width: 60%;
+            padding: 2% 0;
         }
     }
 }
