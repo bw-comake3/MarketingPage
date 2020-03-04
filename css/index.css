@@ -598,9 +598,36 @@ section {
   padding: 2% 5%;
 }
 .contact {
+  display: grid;
+  grid-template-areas: "contactHeader contactHeader" "address form";
   padding: 1% 5% 2%;
   margin-bottom: 3%;
 }
+.contact .contactHeader {
+  grid-area: contactHeader;
+}
+.contact .address {
+  grid-area: address;
+  margin-left: 10%;
+  font-size: 1.4rem;
+}
+.contact .form {
+  grid-area: form;
+}
 .contact h4 {
   font-size: 2rem;
+}
+.contact form {
+  border: 1px solid orangered;
+  text-align: right;
+}
+.contact form input {
+  width: 80%;
+}
+.contact form textarea {
+  width: 80%;
+}
+.contact form .actions {
+  width: 50%;
+  height: 120%;
 }

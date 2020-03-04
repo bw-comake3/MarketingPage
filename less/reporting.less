@@ -53,13 +53,47 @@
         }
     }
 }
+
 .submit {
     padding: 2% 5%;
 }
 .contact {
+    display: grid;
+    grid-template-areas:
+        "contactHeader contactHeader"
+        "address form";
+    .contactHeader {
+        grid-area: contactHeader;
+    }
+    .address {
+        grid-area: address;
+        margin-left: 10%;
+        font-size: 1.4rem;
+    }
+    .form {
+        grid-area: form;
+    }
     padding: 1% 5% 2%;
     h4 {
         font-size: 2rem;
     }
     margin-bottom: 3%;
+    form {
+        border: 1px solid orangered;
+        text-align: right;
+        input {
+            width: 80%;
+        }
+
+        textarea {
+            width: 80%;
+        }
+        .actions {
+            li {
+                list-style-type: none;
+            }
+            width: 40%;
+            height: 10vh;
+        }
+    }
 }

@@ -83,14 +83,41 @@
             </p>
         </section>
         <section class="contact">
-            <h4>Contact Us!</h4>
-            <div>
+            <h4 class="contactHeader">Contact Us!</h4>
+            <div class="address">
                 <p>Co-Make</p>
                 <address>
                     874 Fay Kah Rd. <br />
                     Unree El, OK 74135
                 </address>
                 <p>Phone: (918)442-5215</p>
+            </div>
+            <div class="form">
+                <form method="post" action="#">
+                    <div class="fields">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" />
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" />
+                        </div>
+                        <div class="field">
+                            <label class="message" for="message">Message</label>
+                            <textarea
+                                name="message"
+                                id="message"
+                                rows="4"
+                            ></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li>
+                            <input type="submit" value="Send Message" />
+                        </li>
+                    </ul>
+                </form>
             </div>
         </section>
     </body>
