@@ -57,7 +57,9 @@ section {
             width: 90%;
             margin: 0 auto;
         }
-        .phoneButton();
+        @media @phone {
+            .phoneButton();
+        }
         .nextTo {
             @media @tablet {
                 display: flex;

@@ -317,7 +317,7 @@ html {
   font-size: 62.5%;
   background: linear-gradient(skyblue, rgba(255, 166, 0, 0.767), rgba(0, 0, 139));
   z-index: -2;
-  height: 200vh;
+  height: 170vh;
 }
 @media (max-width:500px) {
   html {
@@ -461,10 +461,12 @@ section {
   width: 90%;
   margin: 0 auto;
 }
-.mainText div .join {
-  margin: 3% auto;
-  width: 80%;
-  padding: 2% 0;
+@media (max-width:500px) {
+  .mainText div .join {
+    margin: 3% auto;
+    width: 80%;
+    padding: 2% 0;
+  }
 }
 .mainText div .nextTo {
   display: grid;
