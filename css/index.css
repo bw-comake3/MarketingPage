@@ -576,7 +576,6 @@ section {
   }
 }
 .wrapper2 {
-  margin-top: -8%;
   background: url(../img/kent-rebman-Hau9TnHS130-unsplash.jpg);
   height: 120vh;
   width: 120%;
@@ -705,4 +704,13 @@ section {
 #results {
   font-size: 1.6rem;
   padding: 3%;
+}
+.wrapperAbout {
+  background: url(../img/imike-stettler-OFKjrANxOXY-unsplash.jpg);
+  height: 100vh;
+  background-size: 100%;
+  position: fixed;
+  z-index: -1;
+  background-repeat: no-repeat;
+  width: 100%;
 }
