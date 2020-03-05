@@ -1,16 +1,9 @@
 //This is the fixed image background
 .wrapper {
     background-image: url(../img/avi-waxman-ZdtOy25eNn4-unsplash.jpg);
-    // .backgroundImage(3px, 100%, bottom right, 120vh, 100%, 0);
     .bkImg(3px, cover, bottom center, 100vh, 100%, 0);
     @media @tablet {
-        height: 150vh;
-    }
-    @media @phone {
-        max-width: 260%;
-        width: 260%;
-        height: 150vh;
-        background-position-y: 0;
+        filter: blur(1px);
     }
 }
 //general styling for the see thru black color on each section. White border added too.
@@ -142,7 +135,6 @@ section {
     }
     .buttonsRight {
         width: 50%;
-        border: 1px solid lightgreen;
         align-self: flex-end;
         display: flex;
         justify-content: space-around;

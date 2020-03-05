@@ -405,6 +405,7 @@ nav {
   }
 }
 footer {
+  bottom: 0px;
   width: 100%;
   margin-top: 1%;
   padding: 1% 5% 0;
@@ -438,15 +439,7 @@ footer h6 {
 }
 @media (max-width:800px) {
   .wrapper {
-    height: 150vh;
-  }
-}
-@media (max-width:500px) {
-  .wrapper {
-    max-width: 260%;
-    width: 260%;
-    height: 150vh;
-    background-position-y: 0;
+    filter: blur(1px);
   }
 }
 .firstSection {
@@ -581,7 +574,6 @@ section {
 }
 .how .buttonsRight {
   width: 50%;
-  border: 1px solid lightgreen;
   align-self: flex-end;
   display: flex;
   justify-content: space-around;
