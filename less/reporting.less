@@ -130,19 +130,29 @@
 }
 
 //Form Submission
-.goBack {
-    font-size: 1.4rem;
-    margin: 1%;
-}
-#results {
-    font-size: 1.6rem;
-    padding: 3%;
-}
-
-//AboutUs
-.aboutPage {
+.hundedVH {
     height: 100vh;
 }
+.responseSection {
+    display: grid;
+    .goBack {
+        .btn(20%, 1.4rem);
+        margin: 3% 3% 0;
+        padding: 1% 0;
+        @media @tablet {
+            width: 40%;
+        }
+        @media @phone {
+            width: 80%;
+            margin: 3% auto 0;
+        }
+    }
+    #results {
+        font-size: 1.6rem;
+        padding: 3%;
+    }
+}
+//AboutUs
 .wrapperAbout {
     background: url(../img/imike-stettler-OFKjrANxOXY-unsplash.jpg);
     .bkImg(0px, cover, bottom center, 110vh, 100%, -10%);

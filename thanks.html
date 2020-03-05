@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="hundedVH" lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,23 +22,26 @@
                 </div>
             </nav>
         </header>
-        <a href="ReportingExamples.html" class="goBack">Back to Examples</a>
-        <div id="results">
-            <p>
-                Thank you for your response! We will read and take action, if
-                possible. We will get back to you as soon as possible as well.
-            </p>
-            <p>Here is what was submitted:</p>
-        </div>
-        <script>
-            const resultsList = document.getElementById("results");
-            new URLSearchParams(window.location.search).forEach(
-                (value, name) => {
-                    resultsList.append(`${name}: ${value}`);
-                    resultsList.append(document.createElement("br"));
-                }
-            );
-        </script>
+        <section class="responseSection">
+            <a href="ReportingExamples.html" class="goBack">Back to Examples</a>
+            <div id="results">
+                <p>
+                    Thank you for your response! We will read and take action,
+                    if possible. We will get back to you as soon as possible as
+                    well.
+                </p>
+                <p>Here is what was submitted:</p>
+            </div>
+            <script>
+                const resultsList = document.getElementById("results");
+                new URLSearchParams(window.location.search).forEach(
+                    (value, name) => {
+                        resultsList.append(`${name}: ${value}`);
+                        resultsList.append(document.createElement("br"));
+                    }
+                );
+            </script>
+        </section>
         <!-- <p class="thankYou">
             Thank you for your response! We will read and take action, if
             possible. We will get back to you as soon as possible as well.

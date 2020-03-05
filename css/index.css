@@ -337,19 +337,9 @@ template {
 }
 html {
   font-size: 62.5%;
-  background: linear-gradient(skyblue, rgba(255, 166, 0, 0.767), rgba(0, 0, 139));
+  background: linear-gradient(skyblue, skyblue, rgba(255, 166, 0, 0.767), rgba(19, 0, 160, 0.612), #07041e, rgba(1, 0, 10, 0.979), rgba(0, 0, 139));
   z-index: -2;
-  height: 180vh;
-}
-@media (max-width:800px) {
-  html {
-    height: 250vh;
-  }
-}
-@media (max-width:500px) {
-  html {
-    height: 300vh;
-  }
+  height: cover;
 }
 html,
 body {
@@ -419,7 +409,7 @@ nav {
   filter: blur(3px);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: bottom center;
   height: 100vh;
   position: fixed;
   width: 100%;
@@ -581,6 +571,11 @@ section {
   width: 45%;
   padding: 1% 0;
 }
+@media (max-width:800px) {
+  .how .buttonsRight {
+    width: 75%;
+  }
+}
 @media (max-width:500px) {
   .how .buttonsRight {
     width: 100%;
@@ -700,16 +695,42 @@ section {
     gap: 25px;
   }
 }
-.goBack {
-  font-size: 1.4rem;
-  margin: 1%;
+.hundedVH {
+  height: 100vh;
 }
-#results {
+.responseSection {
+  display: grid;
+}
+.responseSection .goBack {
+  background: linear-gradient(lightblue, rgba(0, 0, 255, 0.253), blue);
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-weight: 600;
+  color: white;
+  width: 20%;
+  font-size: 1.4rem;
+  margin: 3% 3% 0;
+  padding: 1% 0;
+}
+.responseSection .goBack:hover {
+  background: linear-gradient(#7ab2c5, rgba(0, 0, 255, 0.431), #000050);
+  cursor: pointer;
+}
+@media (max-width:800px) {
+  .responseSection .goBack {
+    width: 40%;
+  }
+}
+@media (max-width:500px) {
+  .responseSection .goBack {
+    width: 80%;
+    margin: 3% auto 0;
+  }
+}
+.responseSection #results {
   font-size: 1.6rem;
   padding: 3%;
-}
-.aboutPage {
-  height: 100vh;
 }
 .wrapperAbout {
   background: url(../img/imike-stettler-OFKjrANxOXY-unsplash.jpg);
