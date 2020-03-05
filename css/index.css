@@ -417,7 +417,7 @@ nav {
 .wrapper {
   background-image: url(../img/avi-waxman-ZdtOy25eNn4-unsplash.jpg);
   filter: blur(3px);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom right;
   height: 100vh;
@@ -425,7 +425,6 @@ nav {
   width: 100%;
   z-index: -1;
   margin-top: 0;
-  height: fit-content(-100vh);
 }
 @media (max-width:800px) {
   .wrapper {
@@ -597,31 +596,13 @@ section {
   background: url(../img/kent-rebman-Hau9TnHS130-unsplash.jpg);
   height: 120vh;
   width: 120%;
-  background-size: 100%;
-  background-position-y: center;
+  background-size: cover;
+  background-position: bottom center;
   background-repeat: no-repeat;
   position: fixed;
-  filter: blur(3px);
+  filter: blur(1px);
   z-index: -1;
   margin-top: -3%;
-}
-@media (max-width:800px) {
-  .wrapper2 {
-    max-width: 125%;
-    width: 125%;
-    background-size: 125%;
-    background-position: top right;
-  }
-}
-@media (max-width:500px) {
-  .wrapper2 {
-    max-width: 220%;
-    width: 220%;
-    height: 200vh;
-    margin-top: -20%;
-    background-position-y: top;
-    background-position-x: 220%;
-  }
 }
 .reporting h1 {
   font-size: 3rem;
@@ -637,7 +618,7 @@ section {
   padding: 1% 5%;
 }
 .commonIssues button {
-  margin-left: 60%;
+  margin-left: 30%;
 }
 .commonIssues .blocks {
   display: grid;
@@ -733,20 +714,19 @@ section {
 .wrapperAbout {
   background: url(../img/imike-stettler-OFKjrANxOXY-unsplash.jpg);
   filter: blur(0px);
-  background-size: 150%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
   height: 110vh;
   position: fixed;
   width: 100%;
   z-index: -1;
-  margin-top: -3%;
+  margin-top: -10%;
 }
 @media (max-width:800px) {
   .wrapperAbout {
-    height: 110vh;
-    background-size: 260%;
-    background-position: top right;
+    background-position: bottom right;
+    margin-top: -15%;
   }
 }
 .aboutWrap h2 {
@@ -778,7 +758,7 @@ section {
 .aboutWrap .aboutUs .people img {
   max-width: 40%;
 }
-@media (max-width:500px) {
+@media (max-width:800px) {
   .aboutWrap .aboutUs .people {
     width: 45%;
   }
