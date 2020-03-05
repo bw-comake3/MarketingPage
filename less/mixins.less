@@ -43,3 +43,15 @@
         padding: 2% 0;
     }
 }
+
+.bkImg(@blur, @bSize, @bPosition, @height, @width, @topMargin) {
+    filter: blur(@blur);
+    background-size: @bSize;
+    background-repeat: no-repeat;
+    background-position: @bPosition;
+    height: @height;
+    position: fixed;
+    width: @width;
+    z-index: -1;
+    margin-top: @topMargin;
+}

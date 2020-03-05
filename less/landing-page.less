@@ -1,19 +1,11 @@
 //This is the fixed image background
 .wrapper {
     background-image: url(../img/avi-waxman-ZdtOy25eNn4-unsplash.jpg);
-    filter: blur(3px);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100%;
-    background-position-y: top;
-    background-position-x: right;
-    height: 100vh;
-    position: fixed;
-    z-index: -1;
+    // .backgroundImage(3px, 100%, bottom right, 120vh, 100%, 0);
+    .bkImg(3px, 100%, bottom right, 100vh, 100%, 0);
+    height: fit-content(100vh - 200vh);
     @media @tablet {
-        max-width: 125%;
-        width: 125%;
-        background-size: 125%;
+        height: 150vh;
     }
     @media @phone {
         max-width: 260%;
@@ -23,9 +15,12 @@
     }
 }
 //general styling for the see thru black color on each section. White border added too.
+.firstSection {
+    margin-top: 8%;
+}
 section {
     width: 90%;
-    margin: 6% auto 0;
+    margin: 4% auto 0;
     border: 1px solid white;
     border-radius: 4px;
     background: rgba(0, 0, 0, 0.65);

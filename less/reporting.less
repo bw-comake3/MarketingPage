@@ -9,7 +9,7 @@
     position: fixed;
     filter: blur(3px);
     z-index: -1;
-    margin-top: -2%;
+    margin-top: -3%;
     @media @tablet {
         max-width: 125%;
         width: 125%;
@@ -140,16 +140,12 @@
 }
 
 //AboutUs
+.aboutPage {
+    height: 100vh;
+}
 .wrapperAbout {
     background: url(../img/imike-stettler-OFKjrANxOXY-unsplash.jpg);
-    height: 110vh;
-    background-size: 150%;
-    background-position: center center;
-    margin-top: -2%;
-    position: fixed;
-    z-index: -1;
-    background-repeat: no-repeat;
-    width: 100%;
+    .bkImg(0px, 150%, bottom center, 110vh, 100%, -3%);
     @media @tablet {
         height: 110vh;
         background-size: 260%;
@@ -170,6 +166,7 @@
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+
         .people {
             text-align: center;
             width: 29%;
@@ -186,6 +183,9 @@
             }
             img {
                 max-width: 40%;
+            }
+            @media @phone {
+                width: 45%;
             }
         }
     }
