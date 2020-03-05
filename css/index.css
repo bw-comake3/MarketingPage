@@ -341,6 +341,11 @@ html {
   z-index: -2;
   height: 180vh;
 }
+@media (max-width:800px) {
+  html {
+    height: 250vh;
+  }
+}
 @media (max-width:500px) {
   html {
     height: 300vh;
@@ -358,6 +363,12 @@ nav {
   width: 100%;
   position: fixed;
   margin-top: -6%;
+}
+@media (max-width:800px) {
+  .stay {
+    position: relative;
+    margin-top: 0;
+  }
 }
 .spaceIt {
   width: 90%;
@@ -585,7 +596,7 @@ section {
   height: 120vh;
   width: 120%;
   background-size: 100%;
-  background-position-y: bottom;
+  background-position-y: center;
   background-repeat: no-repeat;
   position: fixed;
   filter: blur(3px);
@@ -597,7 +608,7 @@ section {
     max-width: 125%;
     width: 125%;
     background-size: 125%;
-    background-position-x: right;
+    background-position: top right;
   }
 }
 @media (max-width:500px) {
