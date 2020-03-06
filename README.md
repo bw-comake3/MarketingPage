@@ -2,6 +2,14 @@
 
 ---
 
+Below is the guidelines for the marketing page project side of Co-Make.
+Inside this github you will find the Landing page html, along with some reporting examples html, about us html, and a basic form results page.
+I used less for this project. The css files are there too if less is not your thing.
+Less consists of the reset "normalize", index that routes all the other less files, mixins, variables, navigation, footer, global, landing page, about us, and reporting examples.
+The latter three files in the list are corresponding to each individiual html file, with the form page being the exception. ###Reporting examples less contains the form page.
+
+---
+
 # MarketingPage
 
 Ever get frustrated that a problem in your town or neighborhood goes ages without being resolved?
