@@ -1,0 +1,47 @@
+//AboutUs
+.wrapperAbout {
+    background: url(../img/imike-stettler-OFKjrANxOXY-unsplash.jpg);
+    .bkImg(5px, cover, bottom center, 110vh, 100%, -8%);
+    @media @tablet {
+        background-position: bottom right;
+        margin-top: -15%;
+    }
+}
+
+.aboutWrap {
+    h2 {
+        font-size: 3rem;
+        padding-top: 2%;
+        text-align: center;
+        align-self: center;
+    }
+
+    .aboutUs {
+        border: none;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        .people {
+            text-align: center;
+            width: 29%;
+            padding: 4% 2% 2%;
+
+            h3 {
+                font-size: 2rem;
+            }
+            h5 {
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 1.4rem;
+            }
+            img {
+                max-width: 40%;
+            }
+            @media @tablet {
+                width: 45%;
+            }
+        }
+    }
+}

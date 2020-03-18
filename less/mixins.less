@@ -1,0 +1,60 @@
+//font style for the logo
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script:700&display=swap");
+
+//Media Querries
+@phone: ~"(max-width:500px)";
+@tablet: ~"(max-width:800px)";
+@712: ~"(max-width:712px)";
+
+.nwide() {
+    width: 90%;
+}
+//button color and styles for the blue look
+.btn(@width, @size) {
+    background: linear-gradient(lightblue, rgba(0, 0, 255, 0.253), blue);
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-weight: 600;
+    color: white;
+    width: @width;
+    font-size: @size;
+    &:hover {
+        background: linear-gradient(
+            rgb(122, 178, 197),
+            rgba(0, 0, 255, 0.431),
+            rgb(0, 0, 80)
+        );
+        cursor: pointer;
+    }
+}
+//Blue button on the Landing Page
+.join {
+    padding: 0.5% 2%;
+    margin: 2% 0 2%;
+    .btn(20%, 1.6rem);
+    text-shadow: 0 0 10px black, 0 0 15px black;
+    @media @phone {
+        width: 50%;
+    }
+}
+
+.phoneButton() {
+    .join {
+        margin: 3% auto;
+        width: 80%;
+        padding: 2% 0;
+    }
+}
+//Getting the background images to fit the whole screen.
+.bkImg(@blur, @bSize, @bPosition, @height, @width, @topMargin) {
+    filter: blur(@blur);
+    background-size: @bSize;
+    background-repeat: no-repeat;
+    background-position: @bPosition;
+    height: @height;
+    position: fixed;
+    width: @width;
+    z-index: -1;
+    margin-top: @topMargin;
+}

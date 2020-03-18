@@ -1,0 +1,157 @@
+//This is the fixed image background
+.wrapper {
+    background-image: url(../img/avi-waxman-ZdtOy25eNn4-unsplash.jpg);
+    .bkImg(3px, cover, bottom center, 100vh, 100%, 0);
+    @media @tablet {
+        filter: blur(1px);
+    }
+}
+//general styling for the see thru black color on each section. White border added too.
+.firstSection {
+    margin-top: 10%;
+}
+section {
+    .nwide();
+    margin: 4% auto 0;
+    border: 1px solid white;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+}
+//First rectangle
+.mainText {
+    div {
+        padding: 2% 0;
+        text-align: center;
+
+        h2 {
+            text-align: center;
+            margin: 0;
+            padding: 0 10%;
+            font-size: 3.5rem;
+            @media @tablet {
+                font-size: 2.2rem;
+            }
+            @media @phone {
+                padding: 0 1%;
+            }
+        }
+        p {
+            padding: 0 2%;
+            font-size: 1.8rem;
+            line-height: 170%;
+            .nwide();
+            margin: 0 auto;
+        }
+        @media @phone {
+            .phoneButton();
+        }
+        .nextTo {
+            //the sections where the logo is next to a paragraph
+            @media @tablet {
+                display: flex;
+                flex-direction: column-reverse;
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+
+            display: grid;
+            grid-template-columns: 4fr 1fr 0.5fr;
+            .intro {
+                margin: 0;
+                padding: 1% 0;
+                p {
+                    font-size: 1.6rem;
+                    color: red;
+                    font-weight: 900;
+                }
+                h1 {
+                    font-size: 4rem;
+                    margin-top: -1%;
+                    font-family: "Oleo Script";
+                }
+            }
+        }
+    }
+}
+
+//The about our site section
+.details {
+    text-align: center;
+    h3 {
+        font-size: 2.8rem;
+        width: 100%;
+    }
+    .columns {
+        //Three column section
+        display: flex;
+        justify-content: space-around;
+        div {
+            width: 25%;
+            h4 {
+                font-size: 2.2rem;
+            }
+            p {
+                font-size: 1.6rem;
+                line-height: 150%;
+                padding-bottom: 2%;
+            }
+            i {
+                font-size: 5rem;
+            }
+        }
+        @media @712 {
+            flex-direction: column;
+            div {
+                .nwide();
+                margin: 0 auto;
+            }
+        }
+    }
+    .points {
+        margin: 0;
+        font-size: 1.4rem;
+        padding-bottom: 1%;
+    }
+}
+
+//the how it works section
+.how {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+    padding: 1% 5% 0;
+    h4 {
+        font-size: 2.8rem;
+        text-align: center;
+        margin: 3% 0 0;
+    }
+    h5 {
+        font-size: 2.2rem;
+    }
+    p {
+        font-size: 1.6rem;
+        line-height: 150%;
+        margin: 2%;
+    }
+
+    .buttonsRight {
+        width: 50%;
+        align-self: flex-end;
+        display: flex;
+        justify-content: space-around;
+        .join {
+            width: 45%;
+            padding: 1% 0;
+        }
+        @media @tablet {
+            width: 75%;
+        }
+        @media @phone {
+            width: 100%;
+            flex-direction: column;
+            .phoneButton();
+        }
+    }
+}

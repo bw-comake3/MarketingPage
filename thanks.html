@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="hundedVH" lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Thank You!</title>
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="spaceIt">
+                    <div>
+                        <h1
+                            class="logo"
+                            onclick="window.location.href='index.html'"
+                        >
+                            Co-Make
+                        </h1>
+                    </div>
+                    <div class="links">
+                        <a href="https://co-make-bw3.firebaseapp.com/">Login</a>
+                        <a href="https://co-make-bw3.firebaseapp.com/signup"
+                            >Sign Up</a
+                        >
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="responseSection">
+            <a href="ReportingExamples.html" class="goBack">Back to Examples</a>
+            <div id="results">
+                <p>
+                    Thank you for your response! We will read and take action,
+                    if possible. We will get back to you as soon as possible as
+                    well.
+                </p>
+                <p>Here is what was submitted:</p>
+            </div>
+            <script>
+                const resultsList = document.getElementById("results");
+                new URLSearchParams(window.location.search).forEach(
+                    (value, name) => {
+                        resultsList.append(`${name}: ${value}`);
+                        resultsList.append(document.createElement("br"));
+                    }
+                );
+            </script>
+        </section>
+        <footer>
+            <div class="footerSpace">
+                <h6>There-is-no ©</h6>
+                <h6>Co-Make</h6>
+                <h6>Lambda School</h6>
+            </div>
+            <div class="footerLinks">
+                <a href="https://co-make-bw3.firebaseapp.com/">Login</a>
+                <a href="https://co-make-bw3.firebaseapp.com/signup">Sign Up</a>
+                <a href="ReportingExamples.html">Reporting Examples</a>
+                <a href="AboutUs.html">About Us</a>
+            </div>
+            <a href="index.html" class="landing">Landing Page</a>
+        </footer>
+    </body>
+</html>
